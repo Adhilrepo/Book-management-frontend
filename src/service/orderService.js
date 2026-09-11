@@ -1,4 +1,4 @@
-const API_URL = `${import.meta.env.REACT_APP_API_URL}/orders`;
+const API_URL = `${import.meta.env.VITE_API_URL}/orders`;
 
 // Create an order from checkout details.
 export const createOrder = async (orderDetails) => {

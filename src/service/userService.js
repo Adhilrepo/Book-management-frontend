@@ -1,6 +1,6 @@
 import { authService } from "./authService";
 
-const API_URL = `${import.meta.env.REACT_APP_API_URL}/users`;
+const API_URL = `${import.meta.env.VITE_API_URL}/users`;
 
 // Get logged-in user profile
 export const getProfile = async () => {
