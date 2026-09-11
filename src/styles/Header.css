@@ -1,0 +1,9 @@
+.app-header {
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #e5e7eb;
+  background: #fff;
+}
+
+.app-header-title {
+  margin: 0;
+}

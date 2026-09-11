@@ -1,0 +1,42 @@
+.profile-page-container {
+  max-width: 700px;
+  margin: 4rem auto;
+  padding: 2rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.profile-page-title {
+  margin-top: 0;
+}
+
+.profile-page-section {
+  margin-bottom: 2rem;
+}
+
+.profile-page-label {
+  font-weight: bold;
+  color: #6b7280;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.profile-page-value {
+  font-size: 1.1rem;
+  color: #374151;
+  margin-bottom: 1rem;
+}
+
+.profile-order-card {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  background-color: #f9fafb;
+}
+
+.profile-order-title {
+  margin-top: 0;
+}

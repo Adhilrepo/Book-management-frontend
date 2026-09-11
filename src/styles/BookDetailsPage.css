@@ -1,0 +1,102 @@
+.book-details-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+}
+
+.book-details-header {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.book-details-image {
+  width: 200px;
+  height: 300px;
+  border-radius: 0.5rem;
+  object-fit: cover;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.book-details-content {
+  flex: 1;
+}
+
+.book-details-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0 0 1rem;
+}
+
+.book-details-meta {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.book-details-meta-item {
+  font-size: 0.95rem;
+}
+
+.book-details-meta-label {
+  font-weight: bold;
+  color: #6b7280;
+}
+
+.book-details-description {
+  margin-top: 2rem;
+  line-height: 1.6;
+  color: #4b5563;
+}
+
+.book-details-button-group {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.book-details-back-button,
+.book-details-edit-button,
+.book-details-delete-button {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 0.375rem;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.book-details-back-button {
+  background: #e5e7eb;
+  color: #374151;
+}
+
+.book-details-edit-button {
+  background: #5c6ac4;
+  color: white;
+}
+
+.book-details-delete-button {
+  background: #ef4444;
+  color: white;
+}
+
+.book-details-error {
+  padding: 1rem;
+  background: #fee2e2;
+  color: #991b1b;
+  border-radius: 0.375rem;
+  margin-bottom: 1rem;
+}
+
+.book-details-loading {
+  text-align: center;
+  padding: 2rem;
+}
+
+@media (max-width: 768px) {
+  .book-details-header {
+    flex-direction: column;
+  }
+}

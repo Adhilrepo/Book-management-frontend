@@ -1,0 +1,79 @@
+.new-release-page {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 40px 24px;
+  overflow-x: hidden;
+}
+
+.new-release-title {
+  margin: 0 0 40px;
+  font-size: 36px;
+  overflow-wrap: anywhere;
+}
+
+.book-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.book-grid > * {
+  min-width: 0;
+}
+
+@media (max-width: 1024px) {
+  .new-release-page {
+    padding: 32px 18px;
+  }
+
+  .book-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .new-release-page {
+    padding: 24px 12px;
+  }
+
+  .new-release-title {
+    margin-bottom: 28px;
+    font-size: 30px;
+  }
+
+  .book-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .new-release-page .book-card-cover {
+    height: 140px;
+  }
+
+  .new-release-page .book-card-content {
+    padding: 10px;
+  }
+
+  .new-release-page .book-card-title {
+    font-size: 14px;
+  }
+
+  .new-release-page .book-card-price {
+    font-size: 16px;
+  }
+
+  .new-release-page .book-card-actions,
+  .new-release-page .book-card-admin-actions {
+    gap: 6px;
+  }
+
+  .new-release-page .book-card-view-button,
+  .new-release-page .book-card-buy-button,
+  .new-release-page .book-card-edit-button,
+  .new-release-page .book-card-delete-button {
+    min-width: 0;
+    padding: 7px 6px;
+    font-size: 11px;
+  }
+}

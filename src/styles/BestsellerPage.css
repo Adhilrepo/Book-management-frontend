@@ -1,0 +1,131 @@
+.bestseller-page {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 40px 24px;
+  overflow-x: hidden;
+}
+
+.bestseller-header {
+  margin-bottom: 40px;
+}
+
+.bestseller-title {
+  font-size: 36px;
+  margin: 0;
+}
+
+.bestseller-subtitle,
+.bestseller-section-subtitle {
+  color: #6b7280;
+}
+
+.bestseller-subtitle {
+  margin-top: 8px;
+}
+
+.bestseller-section {
+  margin-bottom: 60px;
+}
+
+.bestseller-section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+  min-width: 0;
+}
+
+.bestseller-section-title {
+  margin: 0;
+  font-size: 28px;
+  overflow-wrap: anywhere;
+}
+
+.bestseller-section-subtitle {
+  margin: 6px 0 0;
+}
+
+.book-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.book-grid > * {
+  min-width: 0;
+}
+
+@media (max-width: 1024px) {
+  .bestseller-page {
+    padding: 32px 18px;
+  }
+
+  .book-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .bestseller-page {
+    padding: 24px 12px;
+  }
+
+  .bestseller-header {
+    margin-bottom: 28px;
+  }
+
+  .bestseller-title {
+    font-size: 30px;
+  }
+
+  .bestseller-section {
+    margin-bottom: 36px;
+  }
+
+  .bestseller-section-header {
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 16px;
+  }
+
+  .bestseller-section-title {
+    font-size: 22px;
+  }
+
+  .book-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .bestseller-page .book-card-cover {
+    height: 140px;
+  }
+
+  .bestseller-page .book-card-content {
+    padding: 10px;
+  }
+
+  .bestseller-page .book-card-title {
+    font-size: 14px;
+  }
+
+  .bestseller-page .book-card-price {
+    font-size: 16px;
+  }
+
+  .bestseller-page .book-card-actions,
+  .bestseller-page .book-card-admin-actions {
+    gap: 6px;
+  }
+
+  .bestseller-page .book-card-view-button,
+  .bestseller-page .book-card-buy-button,
+  .bestseller-page .book-card-edit-button,
+  .bestseller-page .book-card-delete-button {
+    min-width: 0;
+    padding: 7px 6px;
+    font-size: 11px;
+  }
+}
